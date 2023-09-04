@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Avtalearkivet - NSD - Norsk senter for forskningsdata</title>
+    <meta name="title" content="Avtalearkivet - NSD" />
+    <meta name="description" content="Evaluering av NAV-reformen" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="verify-v1" content="fY3eUqHZOqdfbgsHC1iv9amYRk3YBkAMwRU1lV78BDc=" />
+
+    <link rel="stylesheet" type="text/css" href="/common/css/reset-fonts-grids.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/common/js/yui/build/container/assets/container.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/css/common.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="/common/polsys/css/custom.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="/common/polsys/css/polsyssolr.css" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="/common/css/common_print.css" media="print" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/common/css/notification.css" />
+    <link rel="icon" type="image/png" href="/common/img/favicon.ico" />
+    <link href="/rss/nsd" title="RSS 2.0" type="application/rss+xml" rel="alternate" />
+	<link rel="stylesheet" type="text/css" href="/common/css/custom_fvdb.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+
+    <!--[if lte IE 7]>
+    <link href="/common/css/ie7_workarounds.css" type="text/css" rel="stylesheet" media="screen" />
+    <![endif]-->
+
+    <!--[if lte IE 6]>
+    <link href="/common/css/ie6_workarounds.css" type="text/css" rel="stylesheet" media="screen" />
+    <![endif]-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="/common/js/yui/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+    <script type="text/javascript" src="/common/js/yui/build/dragdrop/dragdrop-min.js"></script>
+    <script type="text/javascript" src="/common/js/yui/build/container/container-min.js"></script>
+    <script type="text/javascript" src="/common/js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="/common/js/zebra.js"></script>
+    <script type="text/javascript" src="/common/js/standardista-table-sorting.js"></script>
+    <script type="text/javascript" src="/common/js/js.cookie.js"></script>
+    <script type="text/javascript" src="/common/js/notification.js"></script>
+
+
+
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            $("a[href=/polsys/forvaltning/avtalearkivet.html]").parent().addClass("current");
+        });
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-8748379-1']);
+        _gaq.push (['_gat._anonymizeIp']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+
+<body>
+
+<div class="top-container top-container--topicpage">
+    <div class="container">
+        <h1 class="top-container__title">
+            <a href="/">
+            <img style='float:left; width: 170px; margin-right:10px;  '	src="/img/sikt.png" />
+            <span class="field field--name-title field--type-string field--label-hidden"> FORVALTNINGSDATABASEN</span>
+            </a>
+        </h1>
+        <span id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+       <a href="/"><li>Hjem</li></a>
+        <a href="/forvaltning/sok.html"><li>Søk</li></a>
+        <a href="/forvaltning/dokumentasjon/kontakt.html"><li>Kontakt</li></a>
+        <a href="/en/"><li>English pages</li></a>
+        <a href="https://sikt.no/" target="_blank"><li>Sikt</li></a>
+    </ul>
+  </span>
+        <div class="top-container__description"></div>
+        <ul class="top-container__inline-links">
+        </ul>
+    </div>
+</div>
+
+<!--
+<div class="notification-wrapper">
+    <div class="notification"><p>Fra 1. januar 2022 er NSD en del av <a href="https://sikt.no">Sikt – Kunnskapssektorens tjenesteleverandør</a>.<br/> Våre tjenester vil i en overgangsperiode fortsatt finnes på nsd.no  </p></div>
+</div>
+-->
+<!--
+<div class="notification-wrapper">
+    <div class="notification"><p>Fra 1. januar 2022 er NSD en del av <a href="https://sikt.no">Sikt – Kunnskapssektorens tjenesteleverandør</a>.<br/> Våre tjenester vil i en overgangsperiode fortsatt finnes på nsd.no <i id="close" class="notification fas fa-times" title="Lukk"></i></p></div>
+</div>
+-->
+<!--
+<div id="banner">
+    <div id="nav_site">
+        <ul>
+            <li class="left"><a href="/">Hjem</a></li>
+            <li><a href="/forvaltning/sok.html">Søk</a></li>
+            <li><a href="/forvaltning/dokumentasjon/kontakt.html">Kontakt</a></li>
+            <li><a href="/en/">English pages</a></li>
+        </ul>
+    </div>
+    <a id="nav_logo" href="/">&nbsp;</a> <a id="nav_title" href="/">&nbsp;</a>
+	-->
+    <!--
+    <div id="nav_nsd">
+    <ul>
+        <li class="left"><a href="/">NSD</a></li>
+        <li><a href="/data/index.html">Datatjenester</a></li>
+        <li><a href="/nsd/programvare.html">Programvare</a></li>
+        <li><a href="http://www.samfunnsveven.no/">Undervisning</a></li>
+        <li><a href="/nsd/arkiv/internasjonalt.html">Internasjonalt</a></li>
+    </ul>
+    </div>
+    -->
+	<!--	
+</div>
+-->
+
+
+<div id="nav_project">
+
+
+
+
+    <!-- Google cse -->
+    <div class="searchform">
+        <form action="/polsys/resultat.html" id="cse-search-box">
+            <div>
+                <input type="hidden" name="cx" value="001188589737219495033:nozcznykmsi" />
+                <input type="hidden" name="cof" value="FORID:10" />
+                <input type="hidden" name="ie" value="UTF-8" />
+                <input type="text" name="q" size="20" />
+                <input type="submit" name="sa" value="Søk" />
+            </div>
+        </form>
+        <script type="text/javascript" src="//www.google.com/cse/brand?form=cse-search-box&lang=no"></script>
+    </div>
+
+    <ul><li><a href="/polsys/hjelp/">Det politiske system</a><ul><li><a href="/polsys/hjelp/om.html">Om dataene</a></li><li><a href="/polsys/hjelp/utlevering.html">Utlevering av data</a></li><li><a href="/polsys/hjelp/bruk.html">Vilkår for bruk av data</a></li><li><a href="/polsys/hjelp/kontakt.html">Kontakt</a></li><li><a href="/polsys/hjelp/english.html">English pages</a></li></ul><h6></h6></li><li><a href="/polsys/storting/">Storting</a></li><li><a href="/polsys/regjering/">Regjering</a></li><li><a href="/polsys/parti/">Parti</a></li><li><a href="/polsys/forvaltning/">Forvaltningsdatabasen</a><ul><li><a href="/polsys/forvaltning/dokumentasjon/">Forvaltningsdatabasen</a></li><li><a href="/polsys/forvaltning/forvaltningsdatabasen.html">Enheter</a></li><li><a href="/polsys/forvaltning/forvaltningslitteratur.html">Litteratur</a></li><li><a href="/polsys/forvaltning/statsansatte.html">Statsansatte</a></li><li><a href="/polsys/forvaltning/utvalgsarkivet.html">Utvalg</a></li><li><a href="/polsys/forvaltning/sentraladmsurvey.html">Sentraladm.surveyene</a></li><li><a href="/polsys/forvaltning/sentraladm2016.html">Sentraladm.survey 2016</a></li><li><a href="/polsys/forvaltning/sentraladm2006.html">Sentraladm.survey 2006</a></li><li><a href="/polsys/forvaltning/avtalearkivet.html">Avtalearkivet</a></li></ul><h6></h6></li><li><a href="/polsys/andrearkiv/">Andre arkiv</a></li><li><a href="/polsys/nyheter/">Nyheter</a></li></ul><h6></h6>
+
+    <div id="contact">
+        <address>
+            <div>NSD</div>
+            <div>Harald Hårfagres gate 29</div>
+            <div>5007 Bergen, Norway</div>
+            <div>Tel +47 55 58 21 17</div>
+            <div>polsys@nsd.no</div>
+        </address>
+    </div>
+</div>
+
+
+
+<div id="main">
+    <h2>Avtalearkivet - evaluering av NAV-reformen</h2>
+    <p>Stortinget gav 31. mai 2005 sin tilslutning til forslaget som ledet frem til NAV-reformen. Reformen samler tidligere Trygdeetaten og Aetat i en ny statlig etat, Arbeids- og velferdsetaten.<br />
+        <br />
+        &quot;Målet med evalueringen av NAV-reformen er å gi svar på om reformen når de sine vedtatte mål, som er:</p>
+    <ol>
+        <li>Arbeidsretting - flere i arbeid og aktivitet, færre på stønad.</li>
+        <li>Brukerretting - enklere for brukerne og bedre tjenester tilpasset deres behov.</li>
+        <li>Effektivisering - en helhetlig og effektiv arbeids- og velferdsforvaltning.&nbsp;</li>
+    </ol>
+    <p>Dette prosjektet ble ledet av professor Anne Lise Fimreite ved Uni Rokkansenteret i Bergen. I tillegg var en rekke andre relevante fagmiljøer involvert i prosjektet; Universitetet i Bergen, Universitetet i Oslo, AFI, Norsk Samfunnsvitenskapelig Datatjeneste AS, Høyskolen i Vestfold og Frischsenteret.</p>
+    <h3>Avtalearkivet</h3>
+    <p>Opprettelsen av Avtalearkivet foregår under modul 2 av NAV-evalueringen - Det lokale NAV-kontor. &quot;Modulen tar sikte på å gi en dokumentasjon av reformens innføring på lokalt nivå, og gi kunnskap om hvorvidt og hvordan variasjon i lokale løsninger henger systematisk sammen med variasjon i oppnåelse av reformens hovedmål&rdquo; (Forskningsrådets prosjektbeskrivelse 2010) .</p>
+    <p>Avtalearkivets datasett gir en kvantifisert oversikt over innholdet i inngåtte avtaler mellom Arbeids- og velferdsetaten (representert på fylkesnivå) og den enkelte kommune. Avtalene er registrerte på kommune- eller bydelsnivå. Bergen, Stavanger, Trondheim og Oslo&nbsp; har alle NAV-kontorer på bydelsnivå. I Bergen, Stavanger og Trondheim har den respektive kommunen en sentral avtale som gjelder for alle bydelskontorene, mens i Oslo opererer man både med en sentral avtale for kommunen og en avtale for hvert av bydelskontorene. I Oslo er den sentrale avtalen rammeavtale og går foran de lokale avtalene ved eventuell motstrid. For kodingen har det følgende implikasjoner: Avtalene for kontorene i Oslo er kodet med bakgrunn i den enkelte avtale for hvert bydelskontor, samtidig som disse har blitt vurdert i forhold til den respektive sentrale avtalen som til enhver tid var gjeldende når den enkelte bydelsavtale ble effektuert (jf. tidsrommene de enkelte sentrale avtalene var gjeldende; det er for tiden registrert tre konsekutive sentrale avtaler for Oslo i Avtalearkivet). Som nevnt er den sentrale avtalen gjeldende ved motstrid, dvs. at i tilfeller hvor den sentrale avtalen er mer utfyllende enn bydelsavtalene (for eksempel hva angår tjenester som tilbys ved kontoret) suppleres bydelskontorene i datasettet. For de respektive kontorene i Bergen, Stavanger og Trondheim har man dog samme registreringer på bortimot alle variablene da den sentrale avtalen i disse kommunene er enerådende på bydelsnivå.</p>
+    <p>Datasettet består blant annet av variabler som sier noe om tjenesteomfanget, tjenesteintegrasjon, administrative løsninger, samarbeidsrelasjoner og ledelsesmodeller i de lokale NAV-kontorene basert på klassifiseringer av de lokale samarbeidsavtalene.</p>
+    <h3>Innsamlingsmetode og kodingspraksis</h3>
+    <p>Avtalene i Avtalearkivet er innhentet via post eller e-post siden 2006 av henholdsvis Handelshøyskolen BI og Norsk Samfunnsvitenskapelig Datatjeneste AS. Dette har blitt gjort ved at nevnte institusjoner har henvendt seg til Arbeids- og velferdsetaten fylkeskontorer og anmodet om å få oversendt de lokale samarbeidsavtalene inngått i fylkene i forbindelse med opprettelsene av de lokale NAV-kontorene. Etter hvert har man bedt om å få oversendt eventuelle endrede avtaler. Kodingene er basert utelukkende på bakgrunn av innholdet i avtalene, slik at organisering og tjenester som kontoret eventuelt har men som ikke nevnes i avtalen registreres ikke i Avtalearkivets datasett.&nbsp; Utvalgte tematiske områder av avtalene er eksplisitt og systematisk kodet gjennom å identifisere relevant tematisk innhold og deretter gi det forhåndsbestemte koder i datasettet. Avtalene angir blant annet hvordan de lokale kontorene organiseres og hvilke tjenestepraksis som skal følges ved kontoret.</p>
+    <h3>Datakvalitet &ndash; utfordringer i kodingen</h3>
+    <p>Datakvaliteten er generelt sett god. Men det understrekes at avtalene i praksis varierer i forhold til hvor spesifikke de er. Dette kan tidvis skape utfordringer i kodingspraksisen i forhold til hvor mye kvalitativ skjønnsutøvelse en har måttet benytte. Ikke i alle tilfeller er avtalene like presise i forhold til for eksempel nøyaktig hvilke tjenester som skal utføres og vedtas innenfor NAV-samarbeidet. Monkerud debatterer dette i sin artikkel fra 2008: &rdquo;Mens flere avtaler lister opp de kommunale tjenesteområder som skal inn i NAV-samarbeidet etter lovparagraf i for eksempel LOST (lov om sosiale tjeneseter) eller barnevernloven og introduksjonsloven, oppgir de fleste at tjenester slike som &rsquo;flyktningetjenesten&rsquo;, &rsquo;boligvirkemidler/bolig til vanskeligstilte&rsquo;, &rsquo;tiltak overfor rusmisbrukere&rsquo; mv. skal tilbys av NAV-kontoret. I andre tilfeller henvises til hele kapitler i LOST, eller også at kontoret skal &rsquo;dekke tjenester som i dag ligger til sosialkontoret&rsquo;. I slike tilfeller kan det være uklart hvilke kommunale tjenester som skal inn i NAV-kontoret. Spesielt vil dette være problematisk for de omfattende kommunale tiltakene som vedtas etter kapittel 4 i LOST (avlastningstiltak, støttekontaktordninger, ulike former for assistanse, omsorgslønn mv., jf. &sect;&sect;4-2, a-e)&rdquo; (Monkerud 2008: 5). Noen konkrete eksempler til illustrasjon: I førsteavtalen for NAV Skedsmo påpekes det at kontoret skal tilby &rdquo;bostøtte&rdquo;, i førsteavtalen for NAV Fet sies det at kontoret tilbyr &rdquo;hjelp til bolig&rdquo;, mens i førsteavtalen for NAV Ås vises til Lov om sosiale tjenester &sect;3-4 og &sect;4-5. I alle disse tilfellene tolkes det dit hen at boligvirkemidler legges til kontoret, og derfor har alle disse kontorene har fått verdien &rdquo;1&rdquo; på variabelen &rdquo;bolig&rdquo; i Avtalearkivet. Lignende variasjoner møter man som nevnt når det gjelder flere variabler, blant annet &rdquo;flyktn&rdquo;, &rdquo;gjeldsrdg&rdquo; og &rdquo;rus&rdquo;, m.fl. I slike tilfeller har man i utarbeidelsen av Avtalearkivet valgt å legge seg på en generell linje hvor &rdquo;[o]pplysningene om tjenesteportefølje baserer seg på hva som enkelt kan leses ut av en avtaletekst som varierer i kvalitet/spesifisitet fra det ene tilfellet til et annet&rdquo; (<a href="http://web.bi.no/forskning/papers.nsf/dc1faa5090e7f026c1256e5c0044a137/c650f8076fd759b7c12574fa00430d8f/$FILE/2008-01-monkerud.pdf">Monkerud 2008: 6</a>). Dette er gjort med bakgrunn i vurderingen om at &rdquo;[d]et kan (&hellip;) være rimelig å anta at det enkelte kontoret satser mer på et visst 'tematisk' område ettersom det nevnes i avtaleteksten (&hellip;)&rdquo; (<a href="http://web.bi.no/forskning/papers.nsf/b63c43a0385ff61dc1256e620043c6b0/3bfd388bb38650dac12576770040acbb/$FILE/2009-04-Monkerud.pdf">Monkerud 2009: 10</a>). Likevel må det ovennevnte tas med i betraktning når man leser ut tjenesteinnholdet i de forskjellige NAV-kontorene fra Avtalearkivet.</p>
+    <p>Se Monkerud (2008) s. 4-6 og appendiks 1, samt Monkerud (2009) s. 9-10 og appendiks 2 for mer detaljert gjennomgang av presisjonsnivået og merknader angående koding.</p>
+    <h3>Bruksområder for Avtalearkivet</h3>
+    <p>Avtalearkivet inneholder variabler som angir et utvalg av ulike organisasjonsløsninger som i følge avtalene er valgt ved de forskjellige lokale NAV-kontorene. Dataen skal på sikt kunne &rdquo;kobles til periodiserte og lokale effektmål som gjenspeiler NAV-reformens hovedmålsettinger&rdquo; (Monkerud 2008: 4). Avtalearkivet åpner da for at man skal kunne sammenligne valgte løsninger mellom de forskjellige NAV-kontor, og med bakgrunn i eventuelle forskjeller, si noe om forskjellige løsninger fører til forskjellig måloppnåelse. På den bakgrunn kan det belyses om forskjellige organisasjonsløsninger fører til ulik oppnåelse av ønskede effekter.</p>
+    <p>I og med at Avtalearkivet inneholder variabler som spesifiserer geografisk nivå, åpnes det for kobling med andre data på kommune- og bydelsnivå.</p>
+    <h3>Vilkår for bruk av data</h3>
+    <ol>
+        <li>Data utleveres kun til eget bruk og kun til det prosjektet som er beskrevet i søknaden. Dersom du har behov for å bruke dataene til et annet formål, må det søkes om ny tilgang.</li>
+        <li>Bruker plikter å referere til &quot;NSDs Avtalearkiv for NAV-evalueringen&quot;, og informere (f.eks. i en fotnote) om at &quot;NSD er ikke ansvarlig for analysen av dataene eller de tolkninger som er gjort her&quot;.</li>
+        <li>Bruker plikter å sende NSD/ Bergen kopi av eventuelle rapporter/ publikasjoner (enten i elektronisk form eller to eksemplarer i papirformat) som er utarbeidet på basis av dataene.</li>
+    </ol>
+    <p>&nbsp;</p>
+    <hr />
+    <h3>Kodebok</h3>
+    <p>Under følger en beskrivelse av datasettets variabler.</p>
+    <p><b>kontornr </b>- &quot;angir geografisk nedslagsfelt gitt ved kommunenummer og eventuelt bydelsnummer. Oppbygget som følger: knr1-...-knrn eller knr-bd1-...-bdn der knr1, knr2 (tre eller fire siffer, i stigende rekkefølge) osv. er kommuner som avtalen gjelder for, bd1, bd2&nbsp; (to siffer, i stigende rekkefølge) er evt. bydelsnummer som avtalen gjelder for (to siste siffer i standard i NSDs regionaldatabase; kodes 00 dersom avtalen ikke gjelder en spesifikk bydel/kommunedel).&quot;<br />
+        <b>knr </b>- kommunenummer<br />
+        <b>fnr </b>- fylkesnummer<br />
+        <b>knavn </b>- kommunenavn<br />
+        <b>avt_id</b> - &quot;angir avtalens kommunale avtaleparter (eventuelt med spes. for bydel v/separate bydelsavtaler) og dens nummer i rekkfølgen av alle avtaler mellom disse partene for det aktuelle området. Oppbygget som følger:<br />
+        knr1-...-knrn-nn eller knr_bd1-...-bdn-nn der knr1, knr2 (tre eller fire siffer, i stigende rekkefølge) osv. er kommuner som er parter i avtalen, bd1, bd2 (to siffer, i stigende rekkefølge) er evt. bydelsnummer som avtalen gjelder for (to siste siffer i standard i NSDs regionaldatabase; kodes 00 dersom avtalen ikke gjelder en spesifikk bydel/kommunedel), nn (to siffer) er avtalens nummer i rekkefølgen (01=førsteavtale, 02=andre avtale osv.)&quot;<br />
+        <b>samkont </b>- 1 dersom avtalen regulerer NAV (i et samkontor) i flere kommuner, 0 ellers<br />
+        <b>knr2&hellip;knrn</b> - kommuner v/kommunenummer (utenom kommunen angitt ved knr) som omfattes av avtalen<br />
+        <b>bydelskont </b>- 1 dersom avtalen regulerer NAV i et kommunedelkontor spesielt eller der kommunen har kontorer for ulike deler av kommunen, 0 ellers<br />
+        <b>bnr </b>- bydel gitt ved bydelsnummer (e. standard i NSDs regionaldatabase) som omfattes av kontoret<br />
+        <b>bnr2</b> - evt. andre bydeler v/bydelsnummer (e. standard i NSDs regionaldatabase) som omfattes av kontoret<br />
+        <b>bnavn </b>- navn på bydel(er) (dersom bydelskont=1)<br />
+        <b>kommentar </b>- spesielle merknader (om regionale samarbeid, overordnede avtaler mv.)<br />
+        <b>ledmod </b>- ledelsesmodell: D dersom delt (stat/kommune), A dersom enhetlig administrativ og faglig ledelse, B dersom enhetlig administrativ ledelse<br />
+        <b>ledtilh </b>- leders ansettelsesforhold: S dersom statlig, K dersom kommunalt, D dersom statlig og kommunalt (dersom ledmod=D), F dersom avtalen ikke spesifiserer ansettelsesforhold (dersom ledmod=A,B)<br />
+        <b>lokmaal </b>- 1 dersom avtalen nevner lokale mål utover generelle/overordnede, 0 ellers<br />
+        <b>flyktn </b>- 1 dersom flyktningetjenesten legges til NAV-kontoret, 0 ellers<br />
+        <b>bolig </b>- 1 dersom boligvirkemidler legges til NAV-kontoret, 0 ellers<br />
+        <b>rus </b>- 1 dersom virkemidler/tiltak overfor rusavhengige legges til NAV-kontoret, 0 ellers<br />
+        <b>gjeldsrdg </b>- 1 dersom gjeldsrådgivningstjeneste legges til NAV-kontoret, 0 ellers<br />
+        <b>psyk </b>- 1 dersom tiltak overfor personer med psyk. problemer tilbys ved NAV-kontoret, 0 ellers<br />
+        <b>barnev </b>- 1 dersom barneverntjenesten legges til NAV-kontoret, 0 ellers<br />
+        <b>assist_avlast </b>- 1 dersom avtalen nevner at tiltak e. LOST &sect;4.2a,b skal tilbys av NAV-kontoret, 0 ellers.<br />
+        LOST &sect;4.2: <br />
+        De sosiale tjenester skal omfatte<br />
+        a) praktisk bistand og opplæring, herunder brukerstyrt personlig assistanse, til dem som har et særlig hjelpebehov på grunn av sykdom, funksjonshemming, alder eller av andre årsaker,<br />
+        b) avlastningstiltak for personer og familier som har et særlig tyngende omsorgsarbeid,<br />
+        c) støttekontakt for personer og familier som har behov for dette på grunn av funksjonshemming, alder eller sosiale problemer,<br />
+        d) plass i institusjon eller bolig med heldøgns omsorgstjenester til dem som har behov for det på grunn av funksjonshemming, alder eller av andre årsaker,<br />
+        e) lønn til personer som har et særlig tyngende omsorgsarbeid.<br />
+        stottek - 1 dersom avtalen nevner at tiltak e. LOST &sect;4.2c skal tilbys av NAV-kontoret, 0 ellers. LOST &sect;4.2: <br />
+        De sosiale tjenester skal omfatte<br />
+        a) praktisk bistand og opplæring, herunder brukerstyrt personlig assistanse, til dem som har et særlig hjelpebehov på grunn av sykdom, funksjonshemming, alder eller av andre årsaker,<br />
+        b) avlastningstiltak for personer og familier som har et særlig tyngende omsorgsarbeid,<br />
+        c) støttekontakt for personer og familier som har behov for dette på grunn av funksjonshemming, alder eller sosiale problemer,<br />
+        d) plass i institusjon eller bolig med heldøgns omsorgstjenester til dem som har behov for det på grunn av funksjonshemming, alder eller av andre årsaker,<br />
+        e) lønn til personer som har et særlig tyngende omsorgsarbeid.<br />
+        olonn - 1 dersom avtalen nevner at tiltak e. LOST &sect;4.2e skal tilbys av NAV-kontoret, 0 ellers. LOST &sect;4.2: <br />
+        De sosiale tjenester skal omfatte<br />
+        a) praktisk bistand og opplæring, herunder brukerstyrt personlig assistanse, til dem som har et særlig hjelpebehov på grunn av sykdom, funksjonshemming, alder eller av andre årsaker,<br />
+        b) avlastningstiltak for personer og familier som har et særlig tyngende omsorgsarbeid,<br />
+        c) støttekontakt for personer og familier som har behov for dette på grunn av funksjonshemming, alder eller sosiale problemer,<br />
+        d) plass i institusjon eller bolig med heldøgns omsorgstjenester til dem som har behov for det på grunn av funksjonshemming, alder eller av andre årsaker,<br />
+        e) lønn til personer som har et særlig tyngende omsorgsarbeid.<br />
+        <b>samlok </b>- 1 dersom avtale nevner samlokalisering med kommunal tjeneste utenfor NAV-organisasjonen, 0 ellers<br />
+        <b>samlok_flyktn</b> - 1 dersom avtalen nevner at NAV-kontoret samlokaliseres med flyktningetjenesten, 0 ellers (dersom samlok=1)<br />
+        <b>samlok_barnev </b>- 1 dersom avtalen nevner at NAV-kontoret samlokaliseres med barneverntjenesten, 0 ellers (dersom samlok=1)<br />
+        <b>samlok_helsetj </b>- 1 dersom avtalen nevner at NAV-kontoret samlokaliseres med helsetjenesten, 0 ellers (dersom samlok=1)<br />
+        <b>samlok_helse_sos </b>- 1 dersom avtalen nevner at NAV-kontoret samlokaliseres med helse- og sosialtjenesten, 0 ellers (dersom samlok=1)<br />
+        <b>samarb </b>- 2 dersom avtale nevner samarbeid mellom NAV-kontor og navngitte eksterne enheter eller navngitte enheter i NAV-organisasjonen, 1 dersom avtalen nevner samarbeid generelt, 0 ellers<br />
+        <b>kostndel </b>- kostnadsdelingsprinsipp: 1 dersom stat og kommune deler driftskostnader etter antall årsverk, 0 ellers (kostnadsdeling etter egen avtale)<br />
+        <b>oppr_aar </b>- År for ikrafttredelse av avtalen. Etter NAVs etableringsplan for førsteavtaler/ NAVs etableringskart som viser til etableringstidpunkt for NAV-kontoret; etter virkningsdato/dato ved ny avtale, endring eller tillegg.<br />
+        <b>oppr_kv </b>- Kvartal for ikrafttredelse av avtalen.Etter NAVs etableringsplan for førsteavtaler/ NAVs etableringskart som viser til etableringstidpunkt for NAV-kontoret; etter virkningsdato/dato ved ny avtale, endring eller tillegg.<br />
+        <b>virkndato </b>- virkningsdato for avtalen<br />
+        <b>sluttdato </b>- eventuell utløpsdato for avtalen<br />
+        <b>evaldato </b>- eventuell datofrist for første gangs evaluering av avtalen<br />
+        <b>evalintv </b>- eventuelt maksimalt intervall mellom evalueringer (år)<br />
+        <b>kontornavn </b>- Kontornavn = navnet på kontoret i kommunen slik det omtales i avtalen. Eventuelt + kommunenavn i tilfeller hvor kontornavnet omfatter kontorer i flere kommuner. Ved bydelskontor er kontornavn = kommunenavn + bydelsnavn.</p>
+    <h3>Innsamlingsmetode og kodingspraksis</h3>
+    <p>Avtalene i Avtalearkivet er innhentet via post eller e-post siden 2006 av henholdsvis Handelshøyskolen BI og Norsk Samfunnsvitenskapelig Datatjeneste AS. Dette har blitt gjort ved at nevnte institusjoner har henvendt seg til Arbeids- og velferdsetaten fylkeskontorer og anmodet om å få oversendt de lokale samarbeidsavtalene inngått i fylkene i forbindelse med opprettelsene av de lokale NAV-kontorene. Etter hvert har man bedt om å få oversendt eventuelle endrede avtaler. Kodingene er basert utelukkende på bakgrunn av innholdet i avtalene, slik at organisering og tjenester som kontoret eventuelt har men som ikke nevnes i avtalen registreres ikke i Avtalearkivets datasett.&nbsp; Utvalgte tematiske områder av avtalene er eksplisitt og systematisk kodet gjennom å identifisere relevant tematisk innhold og deretter gi det forhåndsbestemte koder i datasettet. Avtalene angir blant annet hvordan de lokale kontorene organiseres og hvilke tjenestepraksis som skal følges ved kontoret.</p>
+    <p>Eksempler på koding:</p>
+    <p style="margin-left: 40px;">&rdquo;Kostnadsprinsipp:<br />
+        Kommune og stat svarer for sin andel av felles driftsutgifter i forhold til antall årsverk som partene til enhver tid er representert med i lokalkontoret. <br />
+        Status 1. januar hvert år danner basis for avregning. Fordeling av utgifter til husleie, strøm og renhold foretas etter egne separate leieavtaler. Det inngås en egen driftsavtale for kontoret og en egen avtale for IKT-løsninger.&rdquo;</p>
+    <p>Her vil avtalen kodes med &rdquo;1&rdquo; på variabelen &rdquo;kostndel&rdquo;. (Jf. kodeboken for ytterligere utdyping av hvordan variabelen operasjonaliseres.)</p>
+    <p style="margin-left: 40px;">&rdquo;Ut over kommunens ansvar for økonomisk sosialhjelp etter lov om sosiale tjenester, råd og veiledning og arbeid med individuelle planer, skal kontoret dekke følgende tjenester som i dag ligger til sosialkontoret i Trysil:<br />
+        - kap 3 sosialtjenestens generelle oppgaver<br />
+        - &sect;4-5 midlertidig husvære.<br />
+        - gjeldsrådgivning<br />
+        - kap 6 særlige tiltak overfor rusmisbrukere.&rdquo;</p>
+    <p>Avsnittet er hentet fra kapittelet hvor avtalen omtaler hvilke kommunale tjenester som legges til kontoret. I dette tilfellet har avtalen blitt kodet med verdiene &rdquo;1&rdquo; på variablene &rdquo;bolig&rdquo;, &rdquo;rus&rdquo; og &rdquo;gjeldsrdg&rdquo; og &rdquo;0&rdquo; på de andre variablene som omhandler kommunalt tjenestetilbud i NAV-kontoret. (Jf. kodeboken for ytterligere utdyping av hvordan variablene operasjonaliseres.)</p>
+    <p style="margin-left: 40px;">&rdquo;Ledelse<br />
+        Kommunen og staten skal ha hver sin faglige leder, som i kontoret har ansvaret for henholdsvis kommunens oppgaver og personell og statens oppgaver og personell, og som instrueres av sin overordnede myndighet, kommunen og staten innenfor hver sitt faglige ansvarsområde.&rdquo;</p>
+    <p>Her vil avtalene henholdsvis få verdiene &rdquo;D&rdquo; og &rdquo;D&rdquo; på variablene &rdquo;ledmod&rdquo; og &rdquo;ledtilh&rdquo; som indikerer at henholdsvis ledelsesansvaret og ledertilhørigheten er delt mellom stat og kommune. (Jf. kodeboken for ytterligere utdyping av hvordan variablene operasjonaliseres.) <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        &nbsp;</p>
+    <p></p>
+</div>
+
+
+
+
+
+
+<div id="signature">
+    <p class="copyright">
+        Copyright © Sikt – Kunnskapssektorens tjenesteleverandør
+        <a href="https://sikt.no/kontakt-oss" target="_blank">
+            • Kontakt SIKT
+        </a>
+        <a href="https://sikt.no/personvernerklaering" target="_blank">
+            • Personvernerklæring
+        </a>
+        <span> Versjon 1.1</span>
+	<a href="https://uustatus.no/nb/erklaringer/publisert/e2ebb5d0-077e-4a9d-babd-8698357d4dba" target="_blank">
+   • Tilgjengelighetserklæring
+  </a>
+    </p>
+</div>
+
+
+
+
+</body>
+</html>

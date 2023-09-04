@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+    http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+  version="2.0">
+
+  <description>Polsys tag library</description>
+  <display-name>Polsys</display-name>
+  <tlib-version>1.0</tlib-version>
+  <short-name>p</short-name>
+  <uri>http://nsd.uib.no/polsys/taglib</uri>
+
+  <tag>
+    <description>Skriver url.</description>
+    <name>url</name>
+    <tag-class>no.nsd.polsys.tags.UrlTag</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+      <description>Selve urlen.</description>
+      <name>value</name>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <description>Skriver enten norsk eller engelsk tekst.</description>
+    <name>out</name>
+    <tag-class>no.nsd.polsys.tags.OutTag</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+      <description>Norsk tekst.</description>
+      <name>no</name>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <description>Engelsk tekst.</description>
+      <name>en</name>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <description>Skriver enhethierarki</description>
+    <name>hierarki</name>
+    <tag-class>no.nsd.polsys.tags.forvaltning.HierarkiTag</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+      <description>Rot-enhet i hierarkiet.</description>
+      <name>rot</name>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <description>Idnum til gitt enhet.</description>
+      <name>idnum</name>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <description>Skriver enhethierarki</description>
+    <name>enhethierarki</name>
+    <tag-class>no.nsd.polsys.tags.forvaltning.HierarkiEnhetregisteretTag</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+      <description>Rot-enhet i hierarkiet.</description>
+      <name>rot</name>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <description>Idnum til gitt enhet.</description>
+      <name>idnum</name>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <description>Skriver enhethierarki</description>
+    <name>enhetsregisterethierarki</name>
+    <tag-class>no.nsd.polsys.tags.forvaltning.EnhetregisteretHierarkiTag</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+      <description>Rot-enhet i hierarkiet.</description>
+      <name>rot</name>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <description>Idnum til gitt enhet.</description>
+      <name>idnum</name>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <description>Skriver ansatt-graf</description>
+    <name>graf</name>
+    <tag-class>no.nsd.polsys.tags.forvaltning.ansatte.GrafAnsatteTag</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+      <description>Tittel til graf.</description>
+      <name>tittel</name>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <description>True eller false, om en skal se på årsverk.</description>
+      <name>aarsverk</name>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <description>Data - total</description>
+      <name>total</name>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <description>Data - menn</description>
+      <name>menn</name>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <description>Data - kvinner</description>
+      <name>kvinner</name>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
+    <description>Skriver ansatt-andel-graf</description>
+    <name>agraf</name>
+    <tag-class>no.nsd.polsys.tags.forvaltning.ansatte.GrafAndelAnsatteTag</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+      <description>Tittel til graf.</description>
+      <name>tittel</name>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <description>True eller false, om en skal se på årsverk.</description>
+      <name>aarsverk</name>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <description>Data - total</description>
+      <name>total</name><rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute><description>Data 1</description><name>data1</name><rtexprvalue>true</rtexprvalue></attribute>
+    <attribute><description>Data 2</description><name>data2</name><rtexprvalue>true</rtexprvalue></attribute>
+    <attribute><description>Data 3</description><name>data3</name><rtexprvalue>true</rtexprvalue></attribute>
+    <attribute><description>Data 4</description><name>data4</name><rtexprvalue>true</rtexprvalue></attribute>
+    <attribute><description>Label 1</description><name>label1</name><rtexprvalue>true</rtexprvalue></attribute>
+    <attribute><description>Label 2</description><name>label2</name><rtexprvalue>true</rtexprvalue></attribute>
+    <attribute><description>Label 3</description><name>label3</name><rtexprvalue>true</rtexprvalue></attribute>
+    <attribute><description>Label 4</description><name>label4</name><rtexprvalue>true</rtexprvalue></attribute>
+  </tag>
+
+
+  <tag>
+    <description>Skriver tabell.</description>
+    <name>tabell</name>
+    <tag-class>no.nsd.polsys.tags.admin.forvaltning.TabellTag</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+      <description>Data og kolonner.</description>
+      <name>value</name>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+
+
+    <function>
+        <name>sgln</name>
+        <function-class>no.nsd.polsys.modell.forvaltning.Util</function-class>
+        <function-signature>String getStatGrlTekstNorsk(java.lang.String)</function-signature>
+    </function>
+
+    <function>
+        <name>sgle</name>
+        <function-class>no.nsd.polsys.modell.forvaltning.Util</function-class>
+        <function-signature>String getStatGrlTekstEngelsk(java.lang.String)</function-signature>
+    </function>
+
+
+</taglib>

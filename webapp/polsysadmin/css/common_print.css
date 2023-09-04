@@ -1,0 +1,97 @@
+/** NSD print stylesheet **/
+
+#banner{
+	display: none;
+}
+
+#nav_project{
+	display: none;
+}
+
+
+#main h1, #main h2, #main h3, #main h4 #main p #main a{
+color: #ffffff;
+}
+
+#main h1{
+font-size:14pt;
+}
+
+#main{
+	width: auto;
+	margin: 0;
+	padding: 0;
+	font-family: verdana, arial, times new roman;
+	font-size: 8pt;
+}
+
+a:link, a:visited {
+	color: #520;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	}
+
+#sidebar {
+	display: none;
+}
+/*
+#sidebar{
+	font-family: verdana, arial, times new roman;
+	font-size: 8pt;
+	color: #ffffff;
+}
+*/
+
+/** ------------- TILLEGG FRA BJARNE 3/9-07 ----------- **/
+
+#main table {
+ border:none;
+ border-collapse:collapse;
+}
+
+td {
+ border:1px solid #cccccc;
+ text-align:right;
+ padding: 2px;
+ margin: 12px;
+ }
+
+th {
+ font-weight: normal;
+ color: #000000;
+ padding: 2px;
+ border:1px solid #cccccc;
+}
+  
+#main table.resultat th {
+ padding: 2px 5px 2px 5px;
+}
+#main table.resultat td {
+ padding: 2px 5px 2px 5px;
+}
+#main table.resultat thead th {
+ text-align: center;
+}
+
+#main table.resultat tbody th {
+ text-align: left;
+}
+
+#main table.resultat thead th.col_header {
+ font-weight: normal;
+ text-align: left;
+ font-size:6pt;
+}
+.tabellnote {
+ color: #aaaaaa;
+ font-size:6pt;
+}
+#main .tabellnote a {
+ color: #aaaaaa;
+}
+.copyright {
+ color: #888888;
+ font-size:7pt;
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+}

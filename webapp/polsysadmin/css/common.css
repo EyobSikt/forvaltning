@@ -1,0 +1,1070 @@
+/** NSD main template **/
+
+/** ----------- HTML selectors ------------ **/
+html {
+  padding: 0;
+  margin: 0 0 0 0;
+  background-color:#ffffff;
+}
+
+body {
+  font-family: verdana, arial, "trebuchet ms", sans-serif;
+  font-size: 11px;
+  margin:0;
+  /*width: 975px;*/
+  margin-left: 0;
+  background-color: #ffffff;
+  text-align: left;
+  line-height: 1.3em;
+}
+
+a:link {
+  color: #305080;
+  text-decoration: none;
+}
+
+a:active {
+  color: #305080;
+  text-decoration: none;
+}
+
+a:visited{
+  color: #305080;
+  text-decoration: none;
+}
+
+a.img_link:hover {
+  border-bottom: none;
+}
+
+a:hover{
+  border-bottom: 1px solid;
+}
+
+/* klasse for � f� default linkfarge p� overskriftslenker */
+a.headerlink:link, a.headerlink:active, a.headerlink:visited {
+ color: #305080;
+}
+
+h1 {
+  font-family: arial, trebuchet ms, verdana, sans-serif;
+  color:#305080;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 0 2px 0;
+}
+
+h2 {
+  font-family: arial, trebuchet ms, verdana, sans-serif;
+  font-weight:bold;
+  font-size: 18px;
+  margin: 0px;
+  color:#305080;
+  padding: 10px 0 2px 0;
+}
+
+h3 {
+  font-family: verdana, trebuchet ms, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0px;
+  padding: 6px 0px 2px 0px;
+  color: #305080;
+}
+
+h4 {
+  font-family: verdana, trebuchet ms, sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  margin: 0px;
+  padding: 6px 0px 2px 0px;
+  color: #305080;
+}
+
+
+.h_super {  /* Superscript - heading */
+  color:#305080;
+  font-family:verdana,trebuchet ms,sans-serif;
+  font-size:12px;
+  font-weight:bold;
+  padding:2px 0px 2px;
+  }
+  
+
+.lineunder { /* strek under overskrift - brukt i dataindeksen - (bo 19.2.08) */
+  border-bottom:1px solid #dedede;
+}
+
+
+ul {
+  margin: 0 0 10px 0;
+  padding:0 10px 0 13px;
+  list-style-type: disc;
+}
+
+ul.rapport li {
+  border-bottom:1px solid #dedede;
+  list-style-position:outside;
+  list-style:none;
+  margin-left:-12px;
+}
+
+ol {
+  margin: 0 0 10px 0;
+  padding:0 10px 0 20px;
+  list-style-type:decimal;
+}
+
+/* flytta til IE7 workaround css fil*/
+/*
+ol li {
+  margin: 0 0 0 14px;
+}
+*/
+li {
+ line-height: 1.5em;
+ padding: 3px 0 3px 0;
+}
+
+ul li ul {
+  margin: 0;
+}
+
+ul.plain {
+  margin: 0 0 10px 0;
+
+  line-height: 1.5em;
+  list-style-type: none;
+}
+
+ul.plain li {
+  padding: 0;
+}
+
+ul.plainindex { /* plainindex - uten bullet og mindre linjeavstand (bo - 19/2-08) */
+  margin: 0 0 2px 0;
+  padding:0 0 0 0;
+  line-height: 1.5em;
+  list-style-type: none;
+}
+
+ul.plainindex li {
+  padding: 0;
+  list-style-type: none;
+}
+
+li.dataindexlink {
+  line-height:100%;
+}
+
+ul.code{
+  margin: 0 0 10px 0;
+  padding:0 0 0 10px;
+  line-height: 1.5em;
+  list-style-type: none;
+  font-family: monospace;
+}
+
+ul.code li {
+  padding: 0px;
+  text-indent: -10px;
+}
+
+div.code {
+  margin: 0 0 10px 0;
+  padding:0 0 0 10px;
+  line-height: 1.5em;
+}
+
+div.code div {
+  padding: 0px;
+  text-indent: -10px;
+  font-family: monospace;
+}
+
+code {
+  font-family: monospace;
+}
+
+strong {
+font-weight: bold;
+}
+
+em {
+font-style: italic;
+}
+
+.img_news { /* Bilde - nyhet i oppslagsspalten i sidebar */
+  float:right;
+  padding: 2px 0 2px 10px;
+  width:70px;
+  border:0px;
+}
+
+.img_right {
+  float: right;
+  padding: 2px 0 2px 10px;
+}
+
+.img_left {
+  float: left;
+  padding: 2px 10px 2px 0;
+}
+
+.img_nowrap {
+/*  display: block;*/
+  padding: 2px 10px 2px 0;
+}
+
+
+/** ----------- begin: banner ------------ **/
+#banner {
+  background-image: url(../img/header.jpg);
+  height: 145px;
+  width: 975px;
+  background-color: #FFFFFF;
+}
+
+#banner a#nav_title {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+#banner a#nav_logo {
+  border-bottom: none;
+  text-decoration: none;
+} 
+
+#nav_logo {
+  position: absolute;
+  top: 50px;
+  left: 58px;
+  width: 60px;
+  height: 60px;
+}
+
+#nav_title {
+  position: absolute;
+  top: 65px;
+  left: 125px;
+  width: 400px;
+  height: 30px;
+}
+
+/** ----------- end: banner ------------ **/
+
+/** ----------- begin: nav_nsd ------------ **/
+#nav_nsd {
+/*  padding: 122px 0 0 177px;*/
+  position: absolute;
+  top: 127px;
+  left: 175px;
+  font-size: 11px;
+}
+
+#nav_nsd ul {
+  float: left;
+}
+
+#nav_nsd li {
+  font-weight: bold;
+  display: inline;
+  margin: 0;
+  color: #ffffff;
+  border-left: 1px solid #ffffff;
+  padding: 5px 4px 5px 4px;
+}
+
+#nav_nsd .left {
+  border-left: none;
+}
+
+#nav_nsd a {
+  color:white;
+  text-decoration: none;
+}
+/** ----------- end: nav_nsd ------------ **/
+
+/** ----------- begin: nav_site ------------ **/
+#nav_site {
+  margin-top: 1px;
+  font-size: 9px;
+  font-weight: normal;
+  float: right;
+  padding: 0px 117px 0 0;
+}
+
+#nav_site a{
+  color: #000000;
+  text-decoration: none;
+}
+
+#nav_site ul {
+  margin: 0 0 0px 0;
+  padding:0 0px 0 0px;
+}
+
+#nav_site li {
+  list-style-type: none;
+  float: left;
+  border-left: 2px solid #ffffff;
+  padding: 0px 5px 2px; /*endra 09/11/07*/
+/*  padding: 4px 3px 3px 3px; endra 11/09/07 10:22*/
+}
+/** ----------- end: nav_site ------------ **/
+
+/** ----------- begin: search ------------ **/
+#search {
+  margin: 0px 4px 0px 0;
+  float: left;
+  padding: 0 0 0 510px;
+}
+
+#search input {
+
+  margin-top: 2px;
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #000;
+  font-size:11px;
+  height: 12px;
+}
+
+#search .submit {
+  color: #000;
+  background: #ffffff;
+  border: 1px solid #000;
+  height: 17px;
+  font-size:11px;
+}
+/** ----------- end: search ------------ **/
+
+/** ----------- begin: nav_project ------------ **/
+
+#nav_project{
+
+    width: 177px;
+	float: left;
+	font-weight: normal;
+	font-size: 11px;
+    background-color: #EDEDED;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	margin: 0px 8px 0 0;
+	padding: 0px;
+}
+
+#nav_project ul { /* level 1 list */
+
+	margin: 0 0 0 0;
+    padding: 3px 0px 2px 0px;
+	font-weight: bold;
+	background-color: #ededed;
+	list-style-type: none;
+}
+
+#nav_project li { /* level 1 list */
+
+    float: none;
+	padding-bottom: 2px;
+}
+
+#nav_project ul li { /* level 1 item */
+
+    margin-right: 10px;
+	padding-top: 5px;
+	padding-left: 10px;
+	font-weight: bold;
+	font-size:12px;
+	border-bottom: 1px solid white;
+}
+
+#nav_project ul li ul { /* level 2 list */
+
+    font-weight: normal;
+	padding-left: 0px;
+}
+
+#nav_project ul li ul li { /* level 2 item */
+
+    font-weight: normal;
+	padding-top: 1px;
+	padding-left: 0px;
+	margin-bottom: 0px;
+	border-bottom: none;
+	font-size:11px;
+}
+
+#nav_project ul li ul li ul { /* level 3 list */
+
+    padding-left: 5px;
+	font-size:10px;
+}
+
+#nav_project ul li ul li ul li { /* level 3 item */
+
+    border-bottom: none;
+	font-size:10px;
+}
+
+#nav_project ul li ul li ul li ul { /* level 4 list */
+
+    margin-left: 5px;
+	font-size:9px;
+}
+
+#nav_project ul li ul li ul li ul li { /* level 4 item */
+
+}
+
+#nav_project ul li a {
+
+    color: #305080;
+	text-decoration: none;
+}
+
+#nav_project ul li ul a {
+
+    color: black;
+	text-decoration: none;
+}
+
+/** ----------- end: nav_project ------------ **/ 
+
+/** ----------- begin: main ------------ **/
+#main {
+  width:542px;
+  margin-left:177px;
+  padding: 10px 15px 4px 15px;
+  font-family: verdana, arial, trebuchet ms, sans-serif; 
+  background-color: #ffffff;
+}
+
+#main.wide {
+  width: 755px;
+}
+
+#main p {
+  margin: 0 0 10px 0;
+  line-height: 1.5em;
+}
+/*
+#main h1 {
+  font-family: arial, trebuchet ms, verdana, sans-serif;
+  color:#305080;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 0 2px 0;
+}
+
+#main h2 {
+  font-family: arial, trebuchet ms, verdana, sans-serif;
+  font-weight:bold;
+  font-size: 18px;
+  margin: 0px;
+  color:#305080;
+  padding: 10px 0 2px 0;
+}
+
+#main h3 {
+  font-family: verdana, trebuchet ms, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0px;
+  padding: 6px 0px 2px 0px;
+  color: #305080;
+}
+
+#main h4 {
+  font-family: verdana, trebuchet ms, sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  margin: 0px;
+  padding: 6px 0px 2px 0px;
+  color: #305080;
+}
+*/
+/*
+#main ul {
+  margin: 0 0 10px 0;
+  padding:0 10px 0 13px;
+  list-style-type: disc;
+}
+
+#main ol {
+  margin: 0 0 10px 0;
+  padding:0 10px 0 20px;
+}
+
+#main li {
+ line-height: 1.5em;
+ padding: 2px 0 2px 0;
+}
+*/
+
+#main iframe {
+  padding:0px 0px 0px 15px;
+}
+
+#main .caption {
+ color: #888888;
+ padding: 1px 0px 5px 3px;
+/* padding: 1px 0px 0px 3px;*/
+ text-align: left;
+}
+
+/** ----------- end: main ------------ **/
+
+
+
+/** ----------- begin: sidebar ------------ **/
+#sidebar {
+  width: 190px;
+  float: right;
+  padding: 10px 4px 0px 8px;
+  margin: 0 0 0 8px;
+  border-left: 1px solid #bbbbbb;
+  background-color: #ffffff;
+}
+/*
+#sidebar h1 {
+  font-weight: bold;
+  font-family: arial, verdana, trebuchet ms, sans-serif;
+  color: #305080;
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+#sidebar h2 {
+  font-weight: bold;
+  font-family: verdana, trebuchet ms, sans-serif;
+  padding: 6px 0px 2px 0px;
+  color: #305080;
+}
+*/
+
+#sidebar h3 {  /* �ker avstanden mellom nyhetsoppslagene i sidebar */
+/*  padding-top: 12px;*/ /* bruker margin i stedet for padding for mer konsekvent avstand uavhengig av elementer */
+  padding-top: 0;
+  margin-top: 12px;
+}
+
+#sidebar p {
+  margin: 0 0 2px 0;
+  line-height: 1.4em;
+  font-family: verdana, arial, trebuchet ms, sans-serif;
+}
+/*
+#sidebar li {
+  margin: 0 0 0px 0;
+  font-family: verdana, arial, trebuchet ms, sans-serif;
+  list-style-type: none;
+  padding: 0;
+}
+
+#sidebar ul {
+  margin: 0 0 0px 0;
+  padding: 0 0 10px 0;
+}
+*/
+
+/** ----------- end: sidebar ------------ **/
+
+/** ----------- begin: signature ------------ **/
+#signature {
+  width: 755px;
+  margin: 0px 0 0px 177px;
+  padding: 0 0 10px 15px;
+  font-family: verdana, arial, trebuchet ms, sans-serif;
+  font-size: 9px;
+  float: left;
+  color: #305080;
+  clear: both;
+}
+/** ----------- end: signature ------------ **/
+
+#contact {
+ font-size: 10px;
+ height: 148px;
+ padding: 0px 0px 0px 10px;
+ margin: 0px 0px 0px 0px;
+ color:#305080;
+ background-image: url(../img/bue.png);
+ text-indent: 0px;
+}
+
+#contact h1 {
+  font-size: 10px;
+  font-weight: normal;
+  padding-top: 60px;
+}
+
+.copyright {
+  padding: 5px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+/** ----------- Ekstra test fra Bjarne - midlertidig ------------ **/
+
+/* m�tte legge inn padding for � unng� avkutta bullet-points i IE  -CEH */
+
+.message {    /* Brukes til viktig melding  */
+ color:#CC0000; 
+}
+
+.message_light {    /* Brukes til mindre viktig melding */
+  color:#888888;
+  font-style:italic;  
+}
+
+
+.columns {
+  padding: 0px 0px 0px 2px;
+  float: left;
+  width: 530px;
+  }
+
+.column1 {
+  padding: 0px 8px 0px 2px;
+  float: left;
+  width: 255px;
+  }
+
+.column2 {
+  padding: 0px 0px 0px 2px;
+  float: right;  
+  width: 255px;
+  }
+
+.error {
+  color: #ff0000;
+ }
+
+.rightimage {
+  width:200px;
+  float:right;
+  padding:10px 5px 10px 20px;
+ }
+
+/* 300 px bred */
+.rightimg {
+  float:right;
+  padding:10px 5px 10px 20px;
+ }
+/** ----------- Ekstra test fra Bjarne - midlertidig - SLUTT------------ **/
+
+/* ---------------------- TABELL-DEFINISJONER ---------------------------- */
+
+/* ----------------  TABELLTYPE (default) --------------------- */
+
+table {
+ border-top:1px solid #AAAAAA;
+ border-bottom: 1px solid #AAAAAA;
+ border-right: 1px solid #BBBBBB;
+ border-left: 1px solid #BBBBBB;
+}
+
+thead th {
+	padding: 4px 5px 4px 5px;
+	text-align: center;
+	background-color: #007AAD;
+    color: #FFF;
+  	font-weight: bold;
+  	font-family: "Lucida Grande", verdana, Tahoma, Arial, sans-serif; 
+   	border-left: 1px solid #DEE2E5; 
+}
+
+thead a:link, thead a:visited {
+	color: #fff; 
+}
+
+thead th {
+	border-bottom:1px solid #DEE2E5; 
+}
+
+thead {
+  border-right:1px solid #007AAD;
+  border-left:1px solid #007AAD;
+ }
+
+
+thead th.upperleft {
+  border-left:1px solid #007AAD; 
+ }
+
+
+tbody th{
+  padding:0 5px 0 5px;
+  }
+
+tbody {  /* N�r det ikke er thead eller tfoot */
+  border-top:1px solid #aaaaaa;
+  border-bottom:1px solid #aaaaaa;
+ }
+
+tbody td {
+  	background-color: #ffffff;
+	text-align: right;
+	padding: 2px 5px 2px 5px;
+   	border-left: 1px solid #DEE2E5; 
+}
+
+/* #Table cells on odd rows */
+tbody tr.odd{ /* brukes av zebra.js for � style zebra-stripene */
+  background-color:#f5f5f5;
+   }
+
+tbody tr.odd td {
+	background-color: #F5F5F7;
+/*  	border-left: 1px solid #ffffff; */
+}
+
+/* #Mouseover row */
+tbody tr.ruled td, tbody tr.ruled th {
+	background-color: #305080;
+	/*background-color: #FC6;*/
+}
+
+
+tbody.grey td {
+	background-color: #DEE2E5;
+  	border-right: 1px solid #ffffff;
+}
+
+  
+
+/*-------------- TFOOT ----------- */
+
+tfoot, tbody {
+  border-right:1px solid #bbbbbb;
+  border-left:1px solid #bbbbbb;
+ }
+
+tfoot th{
+  background-color:#ffffff;
+  color: black;
+  border-top:1px solid #ababab;
+  border-bottom:2px solid #ababab;
+  text-align:left;
+  font-weight: normal;
+  font-family: "Lucida Grande", verdana, Tahoma, Arial, sans-serif; 
+  padding: 4px 5px 4px 5px; 
+  }
+
+  
+tfoot td {
+	background-color: #ffffff;
+	border-top:1px solid #aaaaaa;
+	border-bottom:2px solid #ababab;
+	text-align: right;
+	padding: 2px 5px 2px 5px;
+  	border-left: 1px solid #DEE2E5; 
+}
+
+
+/* ----------------  TABELLTYPE check --------------------- */
+.check tbody td, .check tfoot td{
+  text-align:center;
+  }
+
+
+/* ----------------  TABELLTYPE text --------------------- */
+.text tbody td, .text tfoot td{
+  text-align:left;
+  }
+
+ 
+/* ----------------  CELLETYPE TDTEXT -----------------------*/
+
+tbody td.tdtext { /* brukes for � venstrejustere tekstceller */
+  text-align:left;
+  }
+
+
+/* ----------------  TABELLTYPE rowhead --------------------- */
+ 
+.rowhead tbody th, .rowhead tfoot th, .rowhead tfoot td{
+	text-align: left;
+	background-color: #007AAD;
+    color: #FFF;
+  	font-weight: bold;
+  	font-family: "Lucida Grande", verdana, Tahoma, Arial, sans-serif; 
+    border-top:1px solid white;
+}
+  
+  
+.rowhead tbody td {
+	text-align: left;
+	}
+
+/* ----------------  TABELLTYPE form -MERK: kun MIDLERTIDIG for Jon Erik! -CEH 09.05.08 --------------- */
+
+.form tbody, .form thead, .form tfoot, .form td, .form th, .form tbody td, .form thead th, .form tfoot th {
+	border: none;
+}
+
+
+/* ---------------------- KODE FLYTTET FRA ZEBRA.CSS ----------------------------- */
+
+caption {
+  	font-weight: bold;
+  	font-family: "Lucida Grande", verdana, Tahoma, Arial, sans-serif; 
+	font-size: 13px;
+	padding:15px 5px 5px 5px;
+	color: #37527F;
+ }
+
+.label {
+	text-align: left;
+	padding: 3px 5px 3px 5px;
+	border-left:none;
+}
+
+
+/** ----------- START - Til Nyhetsoppslag i main p� forsiden ----(lagt inn av bo 20/2-08) -------- **/
+.main_section { /* Seksjon i main */
+  border-bottom: 1px solid #efefef;
+/*  border-bottom: 1px solid #efefef; */
+  float:left;
+  padding: 8px 0 0px 0;
+}
+
+.main_news_item { /* Container for nyhetsoppslag */
+  padding: 5px 0 0 0px;
+  height:138px;
+/*  background-image:url(../img/arc.jpg);  */
+}
+
+.main_news_item h3 {padding-top: 0px;} /* justere vertikal posisjonering */
+
+.main_news_img { /* Bilde p� nyhetsoppslag p� forsiden */
+  width:80px;
+  height:80px;
+  border:3px solid #99ccff;
+  border:4px solid #dddddd;
+  margin: 0px 10px 0px 0px;
+}
+
+
+.main_news_img.hover { /* Bilde p� nyhetsoppslag p� forsiden  */
+  border:3px solid #99ccff;
+}
+
+.main_news_item a.mer, #sidebar a.mer {  /* Les mer link*/
+  font-size:8px;
+  color:#305080;
+  }
+
+
+/* ---------------- Til nyhetsartikler / NSDnytt -------------- */
+.news_head {  /* H1 for nyhets-artikler */
+  color:#305080;
+  font-family:arial,trebuchet ms,verdana,sans-serif;
+  font-size:20px;
+  font-weight:bold;
+  padding:2px 0pt 2px 0;
+  }
+  
+.news_super {  /* Superscript for nyhets-artikler */
+  color:#305080;
+  font-family:verdana,trebuchet ms,sans-serif;
+  font-size:12px;
+  font-weight:bold;
+  padding:2px 0px 2px;
+  }
+  
+.news_author {  /* Forfatter for nyhets-artikler */
+  color:#8b8b8b;
+  font-family:verdana,trebuchet ms,sans-serif;
+  font-size:10px;
+  padding:2px 0px 2px;
+  }
+  
+.ingress {  /* Forfatter for nyhets-artikler */
+  font-style:italic;
+  }
+  
+.factbox { /* Til faktabokser som har farget bakgrunn i NSDnytt */
+width: 230px;
+float: right;
+padding:10px;
+font-size:80%;
+margin-left:10px;
+background-color: #e6e6e6;
+background-color: #f6f6f6; /* Lagt til 6.1.09 */
+border:1px solid #dddddd;
+}
+
+.factbox_grad { /* Med forl�pning */
+width: 230px;
+float: right;
+padding:10px;
+font-size:80%;
+margin-left:10px;
+background-image: url(../img/grad2.png); 
+border:1px solid #dddddd;
+}
+
+
+
+
+.factbox2 { /* Til fem siste p� NSDdata */
+width: 210px;
+float: right;
+background-color: #ffffff;
+padding:10px;
+font-size:80%;
+margin-left:10px;
+border:1px solid #dddddd;
+}
+
+.factbox3 { /* Til oppslag */
+width: 210px;
+float: right;
+background-color: #f6f6f6;
+padding:10px;
+font-size:80%;
+margin-left:10px;
+border:1px solid #dddddd;
+}
+
+.factboxce { /* midlertidig, for bestillingsskjema */
+width: 100px;
+float: right;
+background-color: #f6f6f6;
+padding:10px;
+font-size:80%;
+margin-left:10px;
+border:1px solid #dddddd;
+}
+
+/* formattering av bestillingsskjema til individdata (bo) */
+.webform_form {
+  border:12px solid #ededed;
+  background-color:#ededed;
+  width: 375px;
+}
+
+.webform_button{
+  text-align:left;
+  padding-right: 0;
+}
+
+.webform_field .onlineform{
+  color:#666666;
+}
+
+.webform_field_multi .onlineform{
+  color:#666666;
+}
+
+.webform_table {
+  border:none;
+}
+
+.webform_table td {
+  background-color:#ededed;
+}
+
+.webform_radio {
+  border:none;
+}
+
+.webform_mandatory {
+ font-size:90%;
+ color:#666666;
+}
+
+.formbutton {
+ float: right;
+}
+
+/** ----------- SLUTT - Til Nyhetsoppslag i main p� forsiden ------------ **/
+
+/* TEST */
+.knapp {
+  padding: 2px;
+  background-color:#eeeeee;
+  border: 1px solid #bbbbbb;
+  color:#888888;
+  float: right;
+  width: 110px;
+  text-align: center;
+  font-size:8px;
+  text-transform:uppercase;
+}
+
+/* --------------- SEMINARPROGRAM DL ------------------------- */
+
+.konferansedl { 
+  margin-left: 0px; 
+  padding-bottom: 10px; 
+  }  
+
+.konferansedt { float: left; }  
+
+.konferansedd { 
+/*  font-weight: bold; */
+  margin-bottom: 7px; 
+  margin-left: 40px; 
+  line-height:1.4em;
+  }  
+
+.konferanseperson { font-weight: normal; } 
+
+/* ------------------------------------------------------------*/
+
+
+/* Markering av posisjon i nav_project */
+
+/*denne er for gjeldenede a */
+#nav_project ul li a.current {
+  border-bottom:1px solid #565656;
+}
+
+#nav_project ul li ul li a.current {
+  border-bottom:1px solid #565656; 
+}
+
+/* dette er for bruk n�r vi flytter current over p� li */
+#nav_project ul li.current a {
+  border-bottom:1px dotted #454545;
+}
+
+#nav_project ul li.current {
+ /* background-color:none; */
+}
+
+#nav_project ul li ul li.current a {
+  text-decoration: none;
+}
+
+#nav_project ul li ul li.current {
+  margin-left:-7px;
+  padding-left:7px;
+/*  background: url(../img/current_back4.png) no-repeat 0px 6px; */
+}
+
+
+/*
+  background: url("../img/1x1orange.png") no-repeat 0px .4em;
+
+#nav_project ul li ul li.current {
+  background-color:#cdcdcd;
+  list-style: upper-roman inside url("../img/1x1orange.png")
+  margin-left:-8px;
+}
+
+
+
+
+ul { list-style: upper-roman inside url("http://www.example.com/notHere.gif");}
+
+#nav_project li.current{
+  background-color:red;
+}
+#nav_project .current li{
+  background-color:#aaaaaa;
+}
+*/
+

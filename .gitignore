@@ -1,0 +1,15 @@
+/polsys.iml
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.cmd
+HELP.md
+out
+/out
+
+### NetBeans ###
+/.idea/
+/.mvn/
+/out/

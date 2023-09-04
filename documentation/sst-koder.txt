@@ -1,0 +1,81 @@
+
+
+NULL
+0
+A
+D
+H
+L
+M
+R
+T
+U
+W
+Ø
+
+
+2005	10:4
+2005	10:5
+2005	11:5:15
+2005	11:5:24
+2005	11:5:3
+2005	13:8
+2005	13:9
+2005	14:5:2
+2005	16:7:2
+2005	17:50
+2005	24:8:4
+2005	32:10:2
+2005	33:12:1
+2005	4:5:8
+2005	40:11:2
+2005	40:7:2
+
+
+u_stat_grl:
+NULL	14
+2	2989700 (ordinært regulativlønte.)
+3	110047
+4	2532
+5	87496
+6	1486
+
+
+u_hdkode:
+NULL	4354
+ 	39
+D	619516 (deltid)
+H	2564533 (heltid)
+T	2833
+
+
+u_tjforh_2:
+NULL	10892
+0	1
+A	2
+D	575971 (deltid)
+H	2550608 (heltid)
+L	37
+M	14902 (månedslønte)
+R	10
+T	38803 (timelønte)
+U	3
+W	5
+Ø	41
+
+u_kjonn
+
+
+
+u_tjsted	Tjenestested angir ulike arbeidssteder under en etat (fra 2009-2010 er denne fjernet som begrep)
+u_arbstenr	Arbeidsstedsnummer (løpende tildelt ved etablering/omorganisering) (fra 2009-2010 er denne fjernet som begrep)
+
+
+aarsverk = CASE u_tjforh_2 WHEN 'T' THEN sum(u_delpros*antall)/1750.0 ELSE sum(u_delpros*antall)/100.0 END
+
+
+
+
+
+
+

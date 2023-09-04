@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Søk - Forvaltningsdatabasen - NSD</title>
+    <meta name="title" content="Søk - Forvaltningsdatabasen - NSD" />
+    <meta name="description" content="" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="verify-v1" content="fY3eUqHZOqdfbgsHC1iv9amYRk3YBkAMwRU1lV78BDc=" />
+
+    <link rel="stylesheet" type="text/css" href="/common/css/reset-fonts-grids.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/common/js/yui/build/container/assets/container.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/css/common.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="/common/polsys/css/custom.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="/common/polsys/css/custom_fvdb.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="/common/css/common_print.css" media="print" />
+    <link rel="icon" type="image/png" href="/common/img/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/common/css/custom_fvdb.css" media="screen"/>
+
+    <link href="/rss/nsd" title="RSS 2.0" type="application/rss+xml" rel="alternate" />
+	<link rel="stylesheet" type="text/css" href="/common/css/notification.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+
+    <!--[if lte IE 7]>
+    <link href="/common/css/ie7_workarounds.css" type="text/css" rel="stylesheet" media="screen" />
+    <![endif]-->
+
+    <!--[if lte IE 6]>
+    <link href="/common/css/ie6_workarounds.css" type="text/css" rel="stylesheet" media="screen" />
+    <![endif]-->
+
+    <script type="text/javascript" src="/common/js/yui/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+    <script type="text/javascript" src="/common/js/yui/build/dragdrop/dragdrop-min.js"></script>
+    <script type="text/javascript" src="/common/js/yui/build/container/container-min.js"></script>
+    <script type="text/javascript" src="/common/js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="/common/js/zebra.js"></script>
+    <script type="text/javascript" src="/common/js/standardista-table-sorting.js"></script>
+
+
+
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            $("a[href=/polsys/forvaltning/sok.html]").parent().addClass("current");
+        });
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-8748379-1']);
+        _gaq.push (['_gat._anonymizeIp']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+
+<body>
+
+<div class="top-container top-container--topicpage">
+    <div class="container">
+        <h1 class="top-container__title">
+            <a href="/">
+            <img style='float:left; width: 170px; margin-right:10px;  '	src="/img/sikt.png" />
+            <span class="field field--name-title field--type-string field--label-hidden"> FORVALTNINGSDATABASEN</span>
+            </a>
+        </h1>
+        <span id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+       <a href="/"><li>Hjem</li></a>
+        <a href="/forvaltning/sok.html"><li>Søk</li></a>
+        <a href="/forvaltning/dokumentasjon/kontakt.html"><li>Kontakt</li></a>
+        <a href="/en/"><li>English pages</li></a>
+        <a href="https://sikt.no/" target="_blank"><li>Sikt</li></a>
+    </ul>
+  </span>
+        <div class="top-container__description"></div>
+        <ul class="top-container__inline-links">
+        </ul>
+    </div>
+</div>
+
+<!--
+<div class="notification-wrapper">
+    <div class="notification"><p>Fra 1. januar 2022 er NSD en del av <a href="https://sikt.no">Sikt – Kunnskapssektorens tjenesteleverandør</a>.<br/> Våre tjenester vil i en overgangsperiode fortsatt finnes på nsd.no </p></div>
+</div>
+
+<div id="banner">
+    <div id="nav_site">
+        <ul>
+            <li class="left"><a href="/">Hjem</a></li>
+            <li><a href="/forvaltning/sok.html">Søk</a></li>
+            <li><a href="/forvaltning/dokumentasjon/kontakt.html">Kontakt</a></li>
+            <li><a href="/en/">English pages</a></li>
+        </ul>
+    </div>
+    <a id="nav_logo" href="/">&nbsp;</a> <a id="nav_title" href="/">&nbsp;</a>
+</div>
+-->
+
+<div id="nav_project">
+
+    <div class="navigation">
+        <ul>
+            <li><a href="/">Forvaltningsdatabasen</a>
+                <ul>
+                    <li><a href="/forvaltning/sok.html">Søk i databasen</a></li>
+                    <li><a href="/dokumentasjon/">Dokumentasjon</a></li>
+                    <li><a href="/forvaltning/dokumentasjon/om.html">Om databasen</a></li>
+                    <li><a href="/forvaltning/dokumentasjon/data.html">Tilgang til data</a></li>
+                    <li><a href="/forvaltning/dokumentasjon/kontakt.html">Kontakt oss</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/forvaltning/forvaltningsdatabasen.html">Enheter</a></li>
+            <li><a href="/forvaltning/forvaltningslitteratur.html">Litteratur</a></li>
+            <li><a href="/forvaltning/statsansatte.html">Statsansatte</a></li>
+            <li><a href="/forvaltning/utvalgsarkivet.html">Utvalg</a></li>
+        </ul>
+    </div>
+
+    <div id="contact">
+        <address>
+            <div>NSD</div>
+            <div>Harald Hårfagres gate 29</div>
+            <div>5007 Bergen, Norway</div>
+            <div style="margin-top: 4px;"><a href="/forvaltning/dokumentasjon/kontakt.html">Kontakt oss</a></div>
+        </address>
+    </div>
+</div>
+
+
+
+<div id="main">
+    <div class="breadcrumbs">Du er her: <a href="/">Forvaltningsdatabasen</a> &gt; Søk</div>
+    <h1>Søk i Forvaltningsdatabasen</h1>
+    <p>Under kan du søke i Google sin index av nettsidene til Forvaltningsdatabasen, eller søke og bla direkte i data fra Forvaltningsdatabasen.</p>
+    <h3>Søk i nettsidene til Forvaltningsdatabasen</h3>
+    <div class="polsyscse">
+
+        <script>
+            (function() {
+                var cx = '002477328210655552315:xz_a0mtvi-c';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+        <gcse:search></gcse:search>
+
+
+        <!--
+        <div id="cse-search-form" style="width: 100%;">Loading</div>
+        <script src="http://www.google.com/jsapi" type="text/javascript"></script> <script type="text/javascript">
+          google.load('search', '1', {language : 'no'});
+          google.setOnLoadCallback(function() {
+            var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
+              '001188589737219495033:yw_ea2apcne', customSearchOptions);
+            customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+            var options = new google.search.DrawOptions();
+            options.enableSearchboxOnly("http://www.nsd.uib.no/polsys/forvaltning/resultat.html");
+            customSearchControl.draw('cse-search-form', options);
+          }, true);
+        </script>
+        -->
+        <link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" /> <style type="text/css">
+        input.gsc-input {
+            border-color: #BCCDF0;
+        }
+        input.gsc-search-button {
+            border-color: #666666;
+            background-color: #CECECE;
+        }
+		.gsc-control-cse:after {
+  content: ".";
+  display: contents;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+    </style></div>
+    <h3>Søk og bla direkte i data fra Forvaltningsdatabasen</h3>
+    <ul>
+        <li><a href="/forvaltning/forvaltningsdatabasen.html">Enhetene i forvaltningen</a></li>
+        <li><a href="/forvaltning/forvaltningslitteratur.html">Forvaltningslitteratur</a></li>
+        <li><a href="/forvaltning/statsansatte.html">Oversikt over statsansatte</a></li>
+        <li><a href="/forvaltning/utvalgsarkivet.html">Utvalgsarkivet</a></li>
+    </ul>
+    <p></p>
+</div>
+
+
+
+
+
+
+<div id="signature">
+    <p class="copyright">
+        Copyright © Sikt – Kunnskapssektorens tjenesteleverandør
+        <a href="https://sikt.no/kontakt-oss" target="_blank">
+            • Kontakt SIKT
+        </a>
+        <a href="https://sikt.no/personvernerklaering" target="_blank">
+            • Personvernerklæring
+        </a>
+        <span> Versjon 1.1</span>
+	<a href="https://uustatus.no/nb/erklaringer/publisert/e2ebb5d0-077e-4a9d-babd-8698357d4dba" target="_blank">
+   • Tilgjengelighetserklæring
+  </a>
+    </p>
+</div>
+
+
+
+
+</body>
+</html>

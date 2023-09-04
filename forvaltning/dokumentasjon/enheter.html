@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dokumentasjon av enheter og enhetstyper - Forvaltningsdatabasen - NSD</title>
+    <meta name="title" content="Dokumentasjon av enheter og enhetstyper - Forvaltningsdatabasen - NSD" />
+    <meta name="description" content="" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="verify-v1" content="fY3eUqHZOqdfbgsHC1iv9amYRk3YBkAMwRU1lV78BDc=" />
+
+    <link rel="stylesheet" type="text/css" href="/common/css/reset-fonts-grids.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/common/js/yui/build/container/assets/container.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/css/common.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="/common/polsys/css/custom.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="/common/polsys/css/custom_fvdb.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="/common/css/common_print.css" media="print" />
+    <link rel="icon" type="image/png" href="/common/img/favicon.ico" />
+
+    <link href="/rss/nsd" title="RSS 2.0" type="application/rss+xml" rel="alternate" />
+	<link rel="stylesheet" type="text/css" href="/common/css/custom_fvdb.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="/common/css/notification.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+
+    <!--[if lte IE 7]>
+    <link href="/common/css/ie7_workarounds.css" type="text/css" rel="stylesheet" media="screen" />
+    <![endif]-->
+
+    <!--[if lte IE 6]>
+    <link href="/common/css/ie6_workarounds.css" type="text/css" rel="stylesheet" media="screen" />
+    <![endif]-->
+
+    <script type="text/javascript" src="/common/js/yui/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+    <script type="text/javascript" src="/common/js/yui/build/dragdrop/dragdrop-min.js"></script>
+    <script type="text/javascript" src="/common/js/yui/build/container/container-min.js"></script>
+    <script type="text/javascript" src="/common/js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="/common/js/zebra.js"></script>
+    <script type="text/javascript" src="/common/js/standardista-table-sorting.js"></script>
+
+
+
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            $("a[href=/polsys/forvaltning/dokumentasjon/enheter.html]").parent().addClass("current");
+        });
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-8748379-1']);
+        _gaq.push (['_gat._anonymizeIp']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+
+<body>
+
+<div class="top-container top-container--topicpage">
+    <div class="container">
+        <h1 class="top-container__title">
+            <a href="/">
+            <img style='float:left; width: 170px; margin-right:10px;  '	src="/img/sikt.png" />
+            <span class="field field--name-title field--type-string field--label-hidden"> FORVALTNINGSDATABASEN</span>
+            </a>
+        </h1>
+        <span id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+       <a href="/"><li>Hjem</li></a>
+        <a href="/forvaltning/sok.html"><li>Søk</li></a>
+        <a href="/forvaltning/dokumentasjon/kontakt.html"><li>Kontakt</li></a>
+        <a href="/en/"><li>English pages</li></a>
+        <a href="https://sikt.no/" target="_blank"><li>Sikt</li></a>
+    </ul>
+  </span>
+        <div class="top-container__description"></div>
+        <ul class="top-container__inline-links">
+        </ul>
+    </div>
+</div>
+
+<!--
+<div class="notification-wrapper">
+    <div class="notification"><p>Fra 1. januar 2022 er NSD en del av <a href="https://sikt.no">Sikt – Kunnskapssektorens tjenesteleverandør</a>.<br/> Våre tjenester vil i en overgangsperiode fortsatt finnes på nsd.no </p></div>
+</div>
+
+<div id="banner">
+    <div id="nav_site">
+       <ul>
+            <li class="left"><a href="/">Hjem</a></li>
+            <li><a href="/forvaltning/sok.html">Søk</a></li>
+            <li><a href="/forvaltning/dokumentasjon/kontakt.html">Kontakt</a></li>
+            <li><a href="/en/">English pages</a></li>
+        </ul>
+   </div>
+    <a id="nav_logo" href="/">&nbsp;</a> <a id="nav_title" href="/">&nbsp;</a>
+</div>
+-->
+
+
+<div id="nav_project">
+
+    <div class="navigation">
+        <ul>
+            <li><a href="/">Forvaltningsdatabasen</a>
+                <ul>
+                    <li><a href="/forvaltning/sok.html">Søk i databasen</a></li>
+                    <li><a href="/dokumentasjon/">Dokumentasjon</a></li>
+                    <li><a href="/forvaltning/dokumentasjon/om.html">Om databasen</a></li>
+                    <li><a href="/forvaltning/dokumentasjon/data.html">Tilgang til data</a></li>
+                    <li><a href="/forvaltning/dokumentasjon/kontakt.html">Kontakt oss</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/forvaltning/forvaltningsdatabasen.html">Enheter</a></li>
+            <li><a href="/forvaltning/forvaltningslitteratur.html">Litteratur</a></li>
+            <li><a href="/forvaltning/statsansatte.html">Statsansatte</a></li>
+            <li><a href="/forvaltning/utvalgsarkivet.html">Utvalg</a></li>
+        </ul>
+    </div>
+
+    <div id="contact">
+        <address>
+            <div>NSD</div>
+            <div>Harald Hårfagres gate 29</div>
+            <div>5007 Bergen, Norway</div>
+            <div style="margin-top: 4px;"><a href="/forvaltning/dokumentasjon/kontakt.html">Kontakt oss</a></div>
+        </address>
+    </div>
+</div>
+
+
+
+<div id="main">
+    <div class="breadcrumbs">Du er her: <a href="/">Forvaltningsdatabasen</a> &gt; <a href="/dokumentasjon/">Dokumentasjon</a> &gt; Statens virksomhet</div>
+    <h1>Organisering av statens virksomhet</h1>
+    <h2>Enheter og avgrensing</h2>
+    <p>Hva som utgjør statsforvaltningen og hva som utgjør særskilte organisasjoner i statsforvaltningen er i Forvaltningsdatabasen avgrenset og klassifisert langs to sentrale dimensjoner kalt  <i>tilknytningsform</i> og <i>grunntype organisasjon</i>.</p>
+    <h2>Tilknytningsform - hva utgjør en organisasjon i statsforvaltningen</h2>
+    <p>Tilknytningsform beskriver den formelle organisasjonsstrukturen i staten og  måten en virksomhet er knyttet til den utøvende statsmakt på. Tilknytningsformen  gir føringer for bl.a. styringsprinsipp, statsrådens parlamentariske og  konstitusjonelle ansvar, juridisk status, finansiering, budsjettilknytning,  finansielt ansvar, ansattes rettigheter og gyldighet av offentlighetslov og  forvaltningslov. Det kan skilles mellom tre hovedtyper:</p>
+    <table class="text zebra">
+        <caption>
+            <p style="text-align: left;">Forvaltningsorgan med tre underformer</p>
+        </caption>
+        <thead>
+        <tr>
+            <th>Kode</th>
+            <th>Tilknytningsform</th>
+            <th>Juridisk status</th>
+            <th>Styringsorgan og styringsprinsipp</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>33</th>
+            <td>Ordinære forvaltningsorgan</td>
+            <td>Del av staten</td>
+            <td>Kongen / departement gjennom instruksjon</td>
+        </tr>
+        <tr>
+            <th>31</th>
+            <td>Forvaltningsorgan med særskilte fullmakter</td>
+            <td>Del av staten</td>
+            <td>Kongen / departement gjennom instruksjon</td>
+        </tr>
+        <tr>
+            <th>32</th>
+            <td>Forvaltningsbedrifter</td>
+            <td>Del av staten</td>
+            <td>Kongen / departement gjennom instruksjon</td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="text zebra">
+        <caption>
+            <p style="text-align: left;">Selskap (statens eierskap) med seks underformer</p>
+        </caption>
+        <thead>
+        <tr>
+            <th>Kode</th>
+            <th>Tilknytningsform</th>
+            <th>Juridisk status</th>
+            <th>Styringsorgan og styringsprinsipp</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>41</th>
+            <td>Statsaksjeselskap (heleide)</td>
+            <td>Eget rettssubjekt</td>
+            <td>Generalforsamling, eierstyring</td>
+        </tr>
+        <tr>
+            <th>42</th>
+            <td>Særlovsselskap</td>
+            <td>Eget rettssubjekt</td>
+            <td>Generalforsamling, eierstyring</td>
+        </tr>
+        <tr>
+            <th>44</th>
+            <td>Statsselskap organisert etter 1965-loven (historisk)</td>
+            <td>Eget rettssubjekt</td>
+            <td>Generalforsamling, eierstyring</td>
+        </tr>
+        <tr>
+            <th>43</th>
+            <td>Statsforetak</td>
+            <td>Eget rettssubjekt</td>
+            <td>Foretaksmøte, eierstyring</td>
+        </tr>
+        <tr>
+            <th>45</th>
+            <td>Statsaksjeselskap (deleide; majoritet)</td>
+            <td>Eget rettssubjekt</td>
+            <td>Generalforsamling, eierstyring</td>
+        </tr>
+        <tr>
+            <th>46</th>
+            <td>Helseforetak</td>
+            <td>Eget rettssubjekt</td>
+            <td>Foretaksmøte, eierstyring</td>
+        </tr>
+        <tr>
+        </tr>
+        </tbody>
+    </table>
+    <table class="text zebra">
+        <caption>
+            <p style="text-align: left;">Stiftelser (tilskuddsforvaltning) med to underformer</p>
+        </caption>
+        <thead>
+        <tr>
+            <th>Kode</th>
+            <th>Tilknytningsform</th>
+            <th>Juridisk status</th>
+            <th>Styringsorgan og styringsprinsipp</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>50</th>
+            <td>Sentralstiftelser (etablert av departement alene eller under medvirkning fra departement)</td>
+            <td>Eget selvstendig&nbsp; rettssubjekt</td>
+            <td>Styret, selvstyrende</td>
+        </tr>
+        <tr>
+            <th>51</th>
+            <td>Randsonestiftelser (etablert av annet statlig organ alene eller i samarbeid med annet statlig organ)</td>
+            <td>Eget selvstendig&nbsp; rettssubjekt</td>
+            <td>Styret, selvstyrende</td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="text zebra">
+        <caption>Egne kategorier i Forvaltningsdatabasen</caption>
+        <thead>
+        <tr>
+            <th>Kode</th>
+            <th>Tilknytningsform</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>10</th>
+            <td>Departement</td>
+        </tr>
+        <tr>
+            <th>15</th>
+            <td>Etat</td>
+        </tr>
+        <tr>
+            <th>35</th>
+            <td>Finansieringsorgan</td>
+        </tr>
+        <tr>
+            <th>-600</th>
+            <td>Storting</td>
+        </tr>
+        <tr>
+            <th>-500</th>
+            <td>Regjering</td>
+        </tr>
+        <tr>
+            <th>-1</th>
+            <td>Stat</td>
+        </tr>
+        <tr>
+            <th>-550</th>
+            <td>Offentlig utvalg</td>
+        </tr>
+        <tr>
+            <th>-1200</th>
+            <td>Kommuner</td>
+        </tr>
+        <tr>
+            <th>-1100</th>
+            <td>Fylkeskommuner</td>
+        </tr>
+        <tr>
+            <th>-1400</th>
+            <td>Frivillig sektor</td>
+        </tr>
+        <tr>
+            <th>-1300</th>
+            <td>Privat sektor</td>
+        </tr>
+        </tbody>
+    </table>
+    <p class="tablenote">Disse kodene brukes for å håndtere hvor virksomheter  som går ut av staten går til eller som kommer inn i staten kommer fra.</p>
+    <p class="tablenote"><i>Direktoratet for IKT og forvaltning (Difi) har publisert en aktuell publikasjon som belyser viktige sider ved en virksomhets tilknytning til staten; Veileder 2014:1: &quot;</i><a target="_blank" href="https://www.difi.no/sites/difino/files/fra-stat-til-marked-veileder-om-utskilling-av-virksomhet-fra-staten_1.pdf"><i>Fra stat til marked. Veileder om utskilling av virksomhet fra staten</i></a><i>&quot;. Her gis det en oversikt bl.a. over sentrale hensyn og begrunnelser for valg av tilknytningsform og organisering innenfor eller utenfor staten.</i></p>
+    <h2>Grunntype organisasjon</h2>
+    <p>Virksomhetene i statsforvaltningen (forvaltningsorgan) kan videre klassifiseres  etter dimensjoner som angir hva som skal regnes som en egen organisasjon. Hva  som defineres som en særskilt organisasjon får stor betydning for antall  organisasjoner og måten de telles på. Forvaltningsorgan er i  Forvaltningsdatabasen klassifisert etter tre hovedtyper grunnenhet:</p>
+    <h3>Enkeltstående nasjonale organ</h3>
+    <p>Direkte underlagt et departement og uten underliggende lokalt apparat. Eksempel: Datatilsynet.</p>
+    <h3>Etater</h3>
+    <p>Organisasjoner som er bygd opp av et sentralt hovedkontor  	som er direkte underlagt et departement. Underlagt hovedkontoret består organisasjonen videre av flere underliggende regionale og/eller lokale kontor. Eksempel: NAV som kan ses på som én organisasjon, men tar man med alle enhetene som utgjør organisasjonen (sentralt direktorat, spesialenheter, lokale NAV kontor mm), så er antallet flere hundre enheter. I Forvaltningsdatabasen er i mange tilfeller flere nivåer under store etater registrert som grupper; f.eks. lensmannskontorene (dvs. hvert enkelt lensmannskontor er ikke registrert).</p>
+    <h3>Gruppeorganisasjoner</h3>
+    <p>Grupper av like organisasjoner som alle er direkte underlagt et departement. Eksempel: Gruppen &quot;Statlige høgskoler&quot;, denne gruppen kan telles som én enhet, eller som drøyt 20 enkeltstående organisasjoner / høgskoler (alle de enkelte høgskolene som inngår i gruppen på et bestemt tidspunkt). Fylkesmennene, bispedømmene og utenrikstjenesten er andre eksempel på slike grupper.</p>
+    <p></p>
+</div>
+
+
+
+
+
+
+
+<div id="signature">
+    <p class="copyright">
+        Copyright © Sikt – Kunnskapssektorens tjenesteleverandør
+        <a href="https://sikt.no/kontakt-oss" target="_blank">
+            • Kontakt SIKT
+        </a>
+        <a href="https://sikt.no/personvernerklaering" target="_blank">
+            • Personvernerklæring
+        </a>
+        <span> Versjon 1.1</span>
+	<a href="https://uustatus.no/nb/erklaringer/publisert/e2ebb5d0-077e-4a9d-babd-8698357d4dba" target="_blank">
+   • Tilgjengelighetserklæring
+  </a>
+    </p>
+</div>
+
+
+
+
+</body>
+</html>

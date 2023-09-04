@@ -1,0 +1,26 @@
+table.data tbody td {
+ white-space: nowrap;
+}
+
+
+.knappgron {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    /*background-image: url("../Bilder/button-main-bg-active.png");   */
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    background-size: cover;
+    border-color: #B2B2B2;
+    border-radius: 2px 2px 2px 2px;
+    /*color: #FFFFFF;*/
+    cursor: pointer;
+    display: inline-block;
+    /*float: right;*/
+    font-size: 16px;
+    font-weight: bold;
+    height: 34px;
+    margin-right: 0.1em;
+   /* position: relative;*/
+}

@@ -1,0 +1,246 @@
+#banner {
+  background-image: url(https://forvaltningsdatabasen.sikt.no/common/css/img/header_fvdb.png);
+}
+#nav_title {
+  width: 220px;
+}
+
+#nav_project .navigation {
+ padding-bottom: 250px;
+}
+
+div#hierarki {
+ border-top: 1px solid #EEEEEE;
+}
+
+#hierarki ul {
+ list-style-type: none;
+}
+#hierarki ul li {
+ padding: 3px;
+ margin: 1px;
+ clear: both;
+}
+
+
+#hierarki .t10 {
+}
+
+#hierarki .t15, #hierarki .t20, #hierarki .t31, #hierarki .t32, #hierarki .t33, #hierarki .t35 {
+ background-color: #EEEEEE;
+}
+
+#hierarki .t41, #hierarki .t42, #hierarki .t43, #hierarki .t44, #hierarki .t45, #hierarki .t46 {
+ background-color: #DD9090;
+}
+
+#hierarki .t50, #hierarki .t51 {
+ background-color: #EEEEC0;
+}
+
+
+
+a.gruppe:link, a.gruppe:active, a.gruppe:visited, a.gruppe:hover {
+    color: #999999;
+}
+a.forvaltning:link, a.forvaltning:active, a.forvaltning:visited, a.forvaltning:hover {
+    color: #008000;
+}
+a.selskap:link, a.selskap:active, a.selskap:visited, a.selskap:hover {
+    color: #A30404;
+}
+a.stiftelse:link, a.stiftelse:active, a.stiftelse:visited, a.stiftelse:hover {
+    color: #AA00AA;
+}
+
+#hierarki .overskrift {
+    color: #777777;
+    display: block;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-top: 7px;
+    padding: 0 0 1px;
+}
+
+
+#hierarki li.hidearea ul {
+ display: none;
+    background: url("../img/arrow_down.png") no-repeat scroll right -1px transparent;
+}
+
+
+#hierarki a.hidelink:hover {
+ border: none;
+}
+#hierarki a.hidelink:link, #hierarki a.hidelink:active, #hierarki a.hidelink:visited {
+ padding: 0px 5px;
+ background: url("../img/arrow_down.png") no-repeat scroll right -1px transparent;
+}
+
+
+#hierarki span {
+ color: #B7B7B7;
+ padding: 0 5px 0 3.5px;
+}
+#hierarki .heading {
+    border-bottom: 1px solid;
+    float: right;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    padding: 0 0 1px;
+}
+
+
+.polsyscse table.gsc-branding, .polsyscse table.gcsc-branding {
+    display: none;
+}
+
+/*ny enhet hirarki */
+
+div#enhethierarki {
+ border-top: 1px solid #EEEEEE;
+}
+
+#enhethierarki ul {
+ list-style-type: none;
+}
+#enhethierarki ul li {
+ padding: 3px;
+ margin: 1px;
+ clear: both;
+}
+
+
+#enhethierarki .t10 {
+}
+
+#enhethierarki .t15, #enhethierarki .t20, #enhethierarki .t31, #enhethierarki .t32, #enhethierarki .t33, #enhethierarki .t35 {
+ background-color: #EEEEEE;
+}
+
+#enhethierarki .t41, #enhethierarki .t42, #enhethierarki .t43, #enhethierarki .t44, #enhethierarki .t45, #enhethierarki .t46 {
+ background-color: #DD9090;
+}
+
+#enhethierarki .t50, #enhethierarki .t51 {
+ background-color: #EEEEC0;
+}
+
+#enhethierarki .overskrift {
+    color: #777777;
+    display: block;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-top: 7px;
+    padding: 0 0 1px;
+}
+
+
+#enhethierarki li.hidearea ul {
+ display: none;
+    background: url("../img/arrow_down.png") no-repeat scroll right -1px transparent;
+}
+
+
+#enhethierarki a.hidelink:hover {
+ border: none;
+}
+#enhethierarki a.hidelink:link, #enhethierarki a.hidelink:active, #enhethierarki a.hidelink:visited {
+ padding: 0px 5px;
+}
+#enhethierarki .showarea a.hidelink:link, #enhethierarki .showarea a.hidelink:active, #enhethierarki .showarea a.hidelink:visited {
+ background: url("../img/arrow_down.png") no-repeat scroll right -1px transparent;
+}
+#enhethierarki .hidearea a.hidelink:link, #enhethierarki .hidearea a.hidelink:active, #enhethierarki .hidearea a.hidelink:visited {
+ background: url("../img/arrow_down.png") no-repeat scroll right -109px transparent;
+}
+
+#enhethierarki span {
+ color: #B7B7B7;
+ padding: 0 5px 0 3.5px;
+}
+#enhethierarki .heading {
+    border-bottom: 1px solid;
+    float: right;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    padding: 0 0 1px;
+}
+
+/* FORSIDE OG SEARCH BOX utvalgsarkivget **************************/
+
+.overridep{
+        line-height: 1.5em;
+        margin: 0 0 10px;
+    }
+    .dhtmlgoodies_vismer{    /* Styling  vis mer */
+        font-size:0.9em;
+        color:#305080;
+        width:60px;
+        margin-bottom:2px;
+        margin-top:2px;
+        padding-left:2px;
+        height:20px;
+        text-decoration: underline;
+        /* End layout CSS */
+        overflow:hidden;
+        cursor:pointer;
+    }
+
+    .dhtmlgoodies_lessmer{    /* Parent box of slide down content */
+        /* Start layout CSS */
+        border:1px solid #A5A1A0;
+        width:550px;
+        /* End layout CSS */
+        visibility:hidden;
+        height:0px;
+        overflow:hidden;
+        position:relative;
+    }
+    .dhtmlgoodies_content{    /* Content that is slided down */
+        padding:10px;
+        font-size:10px;
+        position:relative;
+    }
+
+    #wrapper {
+        width: 1005px;
+        margin: 0 auto;
+    }
+
+    #leftcolumn, #rightcolumn {
+        /*border: 1px solid white;
+        border: 1px solid;*/
+        float: left;
+        min-height: 400px;
+        list-style: none outside none;
+        /*color: white;*/
+    }
+    #leftcolumn {
+        width: 250px;
+        /*background-color: #777;*/
+    }
+    #rightcolumn {
+        width: 500px;
+        /*background-color: #777;*/
+    }
+    .fasetter ul {
+        list-style: none outside none;
+    }
+    #submitbutton {
+        margin: 10px 500px 0 0;
+    }
+    .lineunder {
+        border-bottom: 1px solid #dedede;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(222, 222, 222);
+    }
+
+
+
+
